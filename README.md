@@ -3,7 +3,7 @@
 
 &nbsp;
 
-<img src="https://github.com/JacopoCasanova98/Portfolio-Website/blob/master/src/assets/Home-Website.JPG" width="330"/> 
+<img src="https://github.com/JacopoCasanova98/Portfolio-Website/blob/master/src/assets/Home-Website.JPG" width="630"/> 
 
 &nbsp;
 
