@@ -3,7 +3,7 @@
 
 &nbsp;
 
-<img src="https://github.com/JacopoCasanova98/JS-Counter/blob/main/asstes/readme-img/Js%20Counter.JPG" width="330"/> 
+<img src="https://github.com/JacopoCasanova98/Portfolio-Website/blob/master/src/assets/Home-Website.JPG" width="330"/> 
 
 &nbsp;
 
