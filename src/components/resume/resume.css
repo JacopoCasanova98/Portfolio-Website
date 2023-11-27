@@ -1,0 +1,116 @@
+
+.info__card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.info__mask {
+    background: rgb(234, 178, 74);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: .3s;
+    opacity: 0;
+}
+
+.info__card:hover .info__mask {
+    opacity: 0.9;
+}
+
+
+.info__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.875rem;
+}
+
+
+.info__category {
+    color: whitesmoke;
+    background-color: var(--first-color);
+    border-bottom-left-radius: 0.98rem;
+    border-bottom-right-radius: 0.98rem;
+    position: absolute;
+    top: 0;
+    left: 1.5rem;
+    font-size: var(--small-font-size);
+    display: inline-block;
+    padding: 0.19rem 0.625rem;
+}
+
+.info__title {
+    color: whitesmoke;
+    font-size: var(--h3-font-size);
+    margin: 0 0 0.98rem;
+    padding: 0 1.25rem;
+    position: absolute;
+    top: 3.75rem;
+    transform: translateY(30px);
+    transition: .3s;
+    opacity: 0;
+}
+
+.info__button {
+    color: whitesmoke;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    font-size: var(--h3-font-size);
+    display: block;
+    background-color: var(--first-color);
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    transition: .3s;
+    opacity: 0;
+}
+
+.info__card:hover .info__button {
+    opacity: 1;
+}
+
+.info__card:hover .info__title,
+.info__card:hover .info__category {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .info__filters {
+        justify-content: center;
+    }
+
+    .info__container {
+        grid-template-columns: repeat(2, 330px);
+        justify-content: center;
+         row-gap: 1.875rem;
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .info__container {
+        grid-template-columns: 310px;
+    }
+
+    .info__filters {
+        row-gap: .25rem;
+    }
+  }
+
+
+  @media screen and (max-width: 350px) {
+
+    .info__container {
+        grid-template-columns: 1fr;
+    }
+  }

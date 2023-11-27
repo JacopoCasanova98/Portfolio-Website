@@ -1,0 +1,161 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.home-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro {
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 1.2em;
+    box-shadow: 0 1.25em 1.8em rgba(243, 243, 245, 0.377);
+    border-radius: 1.875rem;
+    max-width: 50%;
+    transition: .7s;
+}
+
+.intro__s {
+    transition: .7s;
+}
+
+.intro__s:hover {
+    transform: scale(1.1);
+}
+
+
+.home__img {
+    max-width: 58%;
+    transition: .5s;
+}
+
+.home__img:hover {
+    transform: scale(1.1) translateY(-1rem);
+}
+
+.home__education {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.introduction {
+    font-size: var(--h2-font-size);
+}
+
+.job-title {
+    color: rgb(234, 178, 74);
+    font-weight: var(--font-bold);
+    text-decoration: underline;
+    font-size: var(--h2-font-size);
+}
+
+
+.home__name {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: 0.3rem;
+    transition: .5s;
+    margin-bottom: 1.2rem;
+}
+
+.home__name:hover {
+    transform: scale(1.1);
+}
+
+.home__socials {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.75rem;
+    margin: 1.5rem 0;
+}
+
+.home__social-link {
+    font-size: 1.3rem;
+    transition: .3s;
+    max-width: 2.4rem;
+}
+
+
+.home__social-link:hover {
+    transform: scale(1.2);
+}
+
+
+.scroll__down {
+    position: absolute;
+    bottom: 3rem;
+    left: 0;
+    width: 100%;
+}
+
+.home__scroll-name {
+    font-size: var(--small-font-size);
+    color: whitesmoke;
+}
+
+.mouse {
+    border: 2px solid whitesmoke;
+    display: block;
+    height: 1.6rem;
+    width: 1.25rem;
+    margin: auto;
+    margin-top: .75rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+@keyframes ani-mouse {
+    0% {
+        top: 25%;
+    }
+
+    15% {
+        top: 35%;
+    }
+
+    50% {
+        top: 39%;
+    }
+
+    100% {
+        top: 25%;
+    }
+
+}
+
+.wheel {
+    background-color: whitesmoke;
+    border-radius: 100%;
+    width: 0.25rem;
+    height: 0.25rem;
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: ani-mouse 2s linear infinite;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .home__social-link {
+        font-size: 1.125rem;
+    }
+
+    .home__img {
+        max-width: 100%;
+    }
+
+  }
